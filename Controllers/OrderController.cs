@@ -21,7 +21,7 @@ namespace OrderItem.Controllers
             using (HttpClient client = new HttpClient())
             {
 
-                client.BaseAddress = new Uri("http://20.239.121.206/api/");
+                client.BaseAddress = new Uri("http://20.24.240.194/api/");
                 var responseTask = client.GetAsync("MenuItem");
                 responseTask.Wait();
                 var result = responseTask.Result;
